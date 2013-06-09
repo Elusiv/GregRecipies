@@ -108,20 +108,20 @@ public class GregRecipies extends JavaPlugin{
 		
 		//Tinker Table
 		if(getConfig().getBoolean(path + "tinkerTable")){
-			ShapedRecipe tinker1 = new ShapedRecipe(getMaterial("powerArmorTinkerTable").toItemStack(1));
-			tinker1.shape("CSC","IEI","IAI");
+			ShapedRecipe item = new ShapedRecipe(getMaterial("powerArmorTinkerTable").toItemStack(1));
+			item.shape("CSC","IEI","IAI");
 
-			tinker1.setIngredient('C', getMaterial("advancedCircuit"));
+			item.setIngredient('C', getMaterial("advancedCircuit"));
 
-			tinker1.setIngredient('S', getMaterial("computerMonitor"));
+			item.setIngredient('S', getMaterial("computerMonitor"));
 
-			tinker1.setIngredient('I', getMaterial("refinedIron"));
+			item.setIngredient('I', getMaterial("refinedIron"));
 
-			tinker1.setIngredient('E', Material.EMERALD);
+			item.setIngredient('E', getMaterial("emerald");
 
-			tinker1.setIngredient('A', getMaterial("steelMachineHull"));
+			item.setIngredient('A', getMaterial("steelMachineHull"));
 
-			getServer().addRecipe(tinker1);
+			getServer().addRecipe(item);
 			logger.info("Added Tinker Table");
 		}
 		
@@ -130,7 +130,7 @@ public class GregRecipies extends JavaPlugin{
 			ShapedRecipe item = new ShapedRecipe(getMaterial("servoMotor").toItemStack(1));
 			item.shape("SBS","COC","SBS");
 
-			item.setIngredient('S', getMaterial("steelRC"));
+			item.setIngredient('S', getMaterial("steelGT"));
 			
 			item.setIngredient('B', getMaterial("brass"));
 			
@@ -138,12 +138,6 @@ public class GregRecipies extends JavaPlugin{
 			
 			item.setIngredient('O', getMaterial("solenoid"));
 			
-			//RT Steel
-			getServer().addRecipe(item);
-			logger.info("Added ");
-			
-			//GT Steel
-			item.setIngredient('S', getMaterial("steelGT"));
 			getServer().addRecipe(item);
 			logger.info("Added Server Motor");
 		}
