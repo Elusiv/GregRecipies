@@ -70,13 +70,13 @@ materials:
         damage: 19
     lapotronCrystal:
         id: 30240
-        damage: 27
+        damage: 26
     chrome:
         id: 21256
         damage: 20
     lapotronicEnergyOrb:
         id: 21293
-        damage: 1
+        damage: 99
     electronicCircuit:
         id: 30191
         damage: 0
@@ -146,3 +146,6 @@ materials:
     ionThruster:
         id: 25031 
         damage: 4
+    emerald:
+        id: 388
+        damage: 0
