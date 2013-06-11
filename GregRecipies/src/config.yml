@@ -64,7 +64,7 @@ materials:
         damage: 0
     energyCrystal:
         id: 30241
-        damage: 27
+        damage: 26
     titanium:
         id: 21256
         damage: 19
