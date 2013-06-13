@@ -108,7 +108,7 @@ public class GregRecipies extends JavaPlugin{
 		
 		//Tinker Table
 		if(getConfig().getBoolean(path + "tinkerTable")){
-			ShapedRecipe item = new ShapedRecipe(getMaterial("powerArmorTinkerTable").toItemStack(1));
+			ShapedRecipe item = new ShapedRecipe(getMaterial("tinkerTable").toItemStack(1));
 			item.shape("CSC","IEI","IAI");
 
 			item.setIngredient('C', getMaterial("advancedCircuit"));
